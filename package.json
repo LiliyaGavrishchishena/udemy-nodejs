@@ -1,0 +1,31 @@
+{
+  "name": "udemy-nodejs",
+  "version": "1.0.0",
+  "description": "Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiliyaGavrishchishena/udemy-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "nodemon"
+  ],
+  "author": "Havryshchyshena Liliia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiliyaGavrishchishena/udemy-nodejs/issues"
+  },
+  "homepage": "https://github.com/LiliyaGavrishchishena/udemy-nodejs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
