@@ -4,7 +4,7 @@
 
   {{#each courses}}
 
-  <div class="col s12 m6 l3">
+  <div class="col s12 m6 l4">
     <div class="card medium">
       <div class="card-image">
         <img src="{{img}}" alt="{{title}}">
@@ -14,9 +14,14 @@
         <p class="price">{{price}}
         </p>
       </div>
-      <div class="card-action">
+      <div class="card-action actions">
         <a href="/courses/{{id}}" target="_blank">Open</a>
         <a href="/courses/{{id}}/edit?allow=true">Edit</a>
+        <form action="/cart/add" method="POST">
+          <input type="hidden" name="id" value='{{id}}'>
+          <button
+            class='btn waves-effect waves-light cyan darken-1'>Buy</button>
+        </form>
       </div>
     </div>
   </div>
