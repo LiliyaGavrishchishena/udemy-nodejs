@@ -1,5 +1,5 @@
 <h1>Edit {{course.title}}</h1>
-<form action="/courses/edit" method="POST">
+<form action="/courses/edit" method="POST" class="course-form">
   <div class="input-field">
     <input id="title" name="title" type="text" class="validate" required
       value={{course.title}}>
@@ -21,6 +21,11 @@
     <span class="helper-text" data-error="Add url of the img"></span>
   </div>
   <input type="hidden" name="id" value={{course._id}}>
-  <button class='btn waves-effect waves-light cyan darken-1'>Edit
+  <button type="submit" class='btn waves-effect waves-light cyan darken-1'>Edit
+    course</button>
+</form>
+<form action="/courses/remove" method="POST">
+  <input type="hidden" name="id" value={{course._id}}>
+  <button class='btn waves-effect waves-light red lighten-1'>Delete
     course</button>
 </form>
